@@ -11,18 +11,14 @@ logging.basicConfig(filename=log_file_path,
                     level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Set display options to show all rows and columns
-pd.set_option('display.max_rows', None)
-pd.set_option('display.max_columns', None)
-
-# Create a DataFrame
-df_all = pd.DataFrame('Input/Test Files.xlsx')
+# Read data from an external file (e.g., CSV or Excel file)
+df = pd.read_excel('Input/Test Files.xlsx')
 
 # Shuffle the DataFrame
 df_shuffled = df.sample(frac=1).reset_index(drop=True)
 
 # Save to a JSON file
-df_shuffled.to_json('shuffled_names.json', orient='records', lines=False)
+df_shuffled.to_json('Output/shuffled_names.json', orient='records', lines=False)
 
 print("Shuffled names saved to shuffled_names.json")
 

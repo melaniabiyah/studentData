@@ -15,6 +15,17 @@ logging.basicConfig(filename=log_file_path,
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 
+# Create a DataFrame
+df_all = pd.DataFrame('Input/Test Files.xlsx')
+
+# Shuffle the DataFrame
+df_shuffled = df.sample(frac=1).reset_index(drop=True)
+
+# Save to a JSON file
+df_shuffled.to_json('shuffled_names.json', orient='records', lines=False)
+
+print("Shuffled names saved to shuffled_names.json")
+
 # Assuming the .xlsx file is in a 'Data' folder within your project directory
 file_path = os.path.join('Input', 'Test Files.xlsx')
 

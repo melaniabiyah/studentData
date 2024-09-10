@@ -12,14 +12,6 @@ This project processes student data from an Excel file, performs computations su
 - **Save data** in both CSV and TSV formats.
 - **Log all computations** to a log file.
 
-## Prerequisites
-* Python 3.x
-* Pandas
-* Numpy (optional)
-* TensorFlow (optional for stretch goals)
-* Google Cloud API key
-* LaBSE Model (for name similarity)
-
 ## File Structure
 
 ### Input

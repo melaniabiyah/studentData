@@ -1,0 +1,11 @@
+2024-09-10 13:23:19,852 - INFO - Excel file 'Data\Test Files.xlsx' read successfully.
+2024-09-10 13:23:19,855 - INFO - Required columns ('Student Name', 'Email Address') exist in the data.
+2024-09-10 13:23:19,859 - INFO - Email addresses generated and added to the DataFrame.
+2024-09-10 13:23:19,859 - INFO - Column 'Gender' exists in the data.
+2024-09-10 13:23:19,861 - INFO - Separated students into 40 males and 24 females.
+2024-09-10 13:23:19,892 - INFO - Male and Female student lists saved to Excel files.
+2024-09-10 13:23:19,894 - INFO - Displayed list of male students.
+2024-09-10 13:23:19,896 - INFO - Displayed list of female students.
+2024-09-10 13:23:19,900 - INFO - Displayed list of students with special characters in their names.
+2024-09-10 13:23:19,903 - INFO - Data saved as CSV file at: Data\Student_Data.csv
+2024-09-10 13:23:19,904 - INFO - Data saved as TSV file at: Data\Student_Data.tsv
